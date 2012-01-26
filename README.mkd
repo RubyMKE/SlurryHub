@@ -1,0 +1,11 @@
+Slurry Hub
+==========
+
+The Github for Home brewers.
+
+Lets Get Started
+----------------
+
+Start adding your feature ideas to the [Wiki Feature Ideas][1] page.
+
+[1]: https://github.com/RubyMKE/Slurry-Hub/wiki/Feature-Ideas "Slurry Hub Features Page"
