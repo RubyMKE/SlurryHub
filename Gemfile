@@ -54,10 +54,15 @@ group :test, :development do
 	gem 'rspec-rails', '~> 2.9.0'
 end
 
-# Acceptance and Integration Testing 
+# Acceptance and Integration Testing
 group :test do
 	gem 'cucumber-rails', '~> 1.3.0'
 	gem 'capybara'
 	gem 'factory_girl'
 	gem 'email_spec'
+end
+
+# Travis CI needs rake
+group :test do
+  gem 'rake', '~> 0.9.2'
 end
