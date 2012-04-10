@@ -9,7 +9,5 @@ before_script:
   - psql -c 'create database slurryhub_test;' -U postgres
 
 script:
-  - RAILS_ENV=test bundle exec rake --trace db:migrate spec
+  - RAILS_ENV=test bundle exec rake --trace db:migrate spec cucumber
 
-# uncomment this line if your project needs to run something other than `rake`:
-# script: bundle exec rspec spec
