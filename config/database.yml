@@ -44,7 +44,7 @@ test: &test
   encoding: unicode
   database: slurryhub_test
   pool: 5
-  username: slurryhub
+  username: postgres
   password:
   min_messages: WARNING
 
