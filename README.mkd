@@ -3,12 +3,15 @@ Slurry Hub
 
 The Github for Home brewers.
 
+[![Build Status](https://secure.travis-ci.org/RubyMKE/SlurryHub.png?branch=master)](http://travis-ci.org/RubyMKE/SlurryHub)
+
 Lets Get Started
 ----------------
 
 Start adding your feature ideas to the [Wiki Feature Ideas][1] page.
 
 [1]: https://github.com/RubyMKE/Slurry-Hub/wiki/Feature-Ideas "Slurry Hub Features Page"
+
 
 ---
 
