@@ -12,7 +12,6 @@ Start adding your feature ideas to the [Wiki Feature Ideas][1] page.
 
 [1]: https://github.com/RubyMKE/Slurry-Hub/wiki/Feature-Ideas "Slurry Hub Features Page"
 
-
 ---
 
 == Welcome to Rails
