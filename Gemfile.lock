@@ -77,8 +77,14 @@ GEM
     gherkin (2.9.1)
       json (>= 1.4.6)
     haml (3.1.4)
+    haml-rails (0.3.4)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      haml (~> 3.0)
+      railties (~> 3.0)
     hashie (1.2.0)
     hike (1.2.1)
+    hpricot (0.8.6)
     i18n (0.6.0)
     journey (1.0.3)
     jquery-rails (2.0.1)
@@ -143,12 +149,15 @@ GEM
       activesupport (>= 3.0)
       railties (>= 3.0)
       rspec (~> 2.9.0)
+    ruby_parser (2.3.1)
+      sexp_processor (~> 3.0)
     rubyzip (0.9.6.1)
     selenium-webdriver (2.20.0)
       childprocess (>= 0.2.5)
       ffi (~> 1.0)
       multi_json (~> 1.0)
       rubyzip
+    sexp_processor (3.2.0)
     sprockets (2.1.2)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -186,11 +195,14 @@ DEPENDENCIES
   email_spec
   factory_girl
   haml
+  haml-rails (~> 0.3.4)
+  hpricot
   jquery-rails
   omniauth (~> 1.0.3)
   pg
   rails (= 3.2.2)
   rake (~> 0.9.2)
   rspec-rails (~> 2.9.0)
+  ruby_parser
   twitter-bootstrap-rails (~> 2.0.4)
   uglifier (>= 1.0.3)
