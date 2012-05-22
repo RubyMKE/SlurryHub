@@ -49,6 +49,13 @@ gem "omniauth", "~> 1.0.3"
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+group :developement do
+  # Load tools for haml, and converting erb and html to haml
+  gem 'haml-rails', '~> 0.3.4'
+  gem 'hpricot'
+  gem 'ruby_parser'
+end
+
 # Load RSpec
 group :test, :development do
 	gem 'rspec-rails', '~> 2.9.0'
