@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120619005100) do
+ActiveRecord::Schema.define(:version => 20120619012929) do
 
   create_table "ingredient_property_types", :force => true do |t|
     t.integer  "ingredient_type_id"
@@ -41,8 +41,10 @@ ActiveRecord::Schema.define(:version => 20120619005100) do
 
   create_table "property_types", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "one_or_many"
+    t.string   "form_input"
   end
 
   create_table "property_values", :force => true do |t|
