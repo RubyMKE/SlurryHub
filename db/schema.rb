@@ -11,7 +11,48 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120326022124) do
+ActiveRecord::Schema.define(:version => 20120619012929) do
+
+  create_table "ingredient_property_types", :force => true do |t|
+    t.integer  "ingredient_type_id"
+    t.integer  "property_type_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  create_table "ingredient_property_values", :force => true do |t|
+    t.integer  "ingredient_id"
+    t.integer  "property_value_id"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  create_table "ingredient_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "ingredients", :force => true do |t|
+    t.string   "CreateIngredients"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  create_table "property_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "one_or_many"
+    t.string   "form_input"
+  end
+
+  create_table "property_values", :force => true do |t|
+    t.string   "name"
+    t.integer  "property_type_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
